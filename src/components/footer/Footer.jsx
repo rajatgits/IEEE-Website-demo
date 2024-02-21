@@ -19,11 +19,11 @@ const Footer = () => {
           />
         </Link>
 
-        <Link href="">
+        <Link href="mailto:hitbranchieee@gmail.com">
           <Image src="/mail.png" alt="Mail icon" width={18} height={18} />
         </Link>
 
-        <Link href="">
+        <Link href="https://www.instagram.com/ieee_hit_sb">
           <Image
             src="/instagram.png"
             alt="Instagram icon"
@@ -31,7 +31,7 @@ const Footer = () => {
             height={18}
           />
         </Link>
-        <Link href="">
+        <Link href="https://www.facebook.com/ieeehit">
           <Image
             src="/facebook.png"
             alt="Facebook icon"
