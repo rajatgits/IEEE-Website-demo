@@ -24,6 +24,11 @@
   .menubutton {
     display: block;
     cursor: pointer;
+    color: var(--textSoft);
+    background-color: var(--bgSoft);
+    padding: 6px;
+    border: none;
+    outline: none;
   }
 
   .mobilelinks {
@@ -38,5 +43,6 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    z-index: 10;
   }
 }

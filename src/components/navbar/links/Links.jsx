@@ -52,7 +52,11 @@ const Links = () => {
         className={styles.menubutton}
         onClick={() => setOpen((prev) => !prev)}
       >
-        Menu
+        <span>
+          ME
+          <br />
+          NU
+        </span>
       </button>
       {open && (
         <div className={styles.mobilelinks}>

@@ -67,3 +67,9 @@ a {
     width: 475px;
   }
 }
+
+@media (max-width: 457px) {
+  .container {
+    width: 400px;
+  }
+}
