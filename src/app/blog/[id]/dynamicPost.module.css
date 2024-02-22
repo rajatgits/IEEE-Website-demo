@@ -71,4 +71,12 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .content {
+    font-size: 18px;
+  }
 }

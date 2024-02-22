@@ -3,16 +3,6 @@ import styles from "./dynamicPost.module.css";
 import PostUser from "@/components/postUser/postUser";
 import { getPost } from "@/lib/data";
 
-// const getData = async (id) => {
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-
-//   if (!res.ok) {
-//     throw new Error("Something went wrong");
-//   }
-
-//   return res.json();
-// };
-
 const DynamicBlog = async ({ params }) => {
   const { id } = params;
 
