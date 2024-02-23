@@ -1,6 +1,11 @@
 import Image from "next/image";
 import styles from "./contact.module.css";
 
+export const metadata = {
+  title: "Contact page",
+  description: "This is the contact page of IEEE HIT SB",
+};
+
 const Contact = () => {
   return (
     <div className={styles.container}>

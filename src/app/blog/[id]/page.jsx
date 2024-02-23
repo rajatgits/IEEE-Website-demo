@@ -3,6 +3,17 @@ import styles from "./dynamicPost.module.css";
 import PostUser from "@/components/postUser/postUser";
 import { getPost } from "@/lib/data";
 
+export const generateMetadata = async ({ params }) => {
+  const { id } = params;
+
+  const post = await getPost(id);
+
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+};
+
 const DynamicBlog = async ({ params }) => {
   const { id } = params;
 
@@ -26,7 +37,7 @@ const DynamicBlog = async ({ params }) => {
           <div className={styles.detailText}>
             <span className={styles.detailTitle}>Published</span>
             <span className={styles.detailValue}>
-              {post.createdAt.toString().slice(4, 16)}
+              {post.createdAt?.toString().slice(4, 16)}
             </span>
           </div>
         </div>
